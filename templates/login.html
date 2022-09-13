@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+{% block content %}
+{% load static %}
+<div class="login-header center">
+    <h1>ACCOUNT</h1>
+    <p>Home / Account</p>
+</div>
+<div class="login-form">
+    <p>Please Sign in your Account</p>
+    <div>
+      <form action="" method="post">
+        {% csrf_token %} 
+        <input class="form-control" type="text" placeholder="username" name="username"/>
+        <input class="form-control"  type="password" placeholder="Password" name="password"/>
+        <button type="submit">Sign in</button>
+      </form>
+    </div>
+    <div class="create">
+      <p>New to our platform ?</p>
+      <a href="{% url 'register' %}">Create an account</a>
+    </div>
+  </div>
+{% endblock %}

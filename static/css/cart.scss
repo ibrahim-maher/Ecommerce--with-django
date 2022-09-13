@@ -1,0 +1,186 @@
+.cart{
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 320px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 555555;
+    transition: 300ms;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 0;
+    overflow: auto;
+    i{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 0px;
+        top: 0;
+        z-index: 555555 ;
+        color: var(--mainColor);
+        background-color: var(--secondColor);
+        cursor: pointer;
+        transition: 300ms;
+    }
+    i:hover{
+        color: #fff;
+        background-color: var(--mainColor);
+    }
+    h3{
+        color:var(--secondColor);
+        padding: 10px 10px 10px 30px;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+    }
+    .whenEmpty{
+        display: none;
+        p{
+            font-size: 18px;
+        }
+    }
+    .instructions{
+        p{
+            font-size: 18px;
+            color: gray;
+            margin: 0
+        }
+        textarea{
+            width: 100%;
+            border: 1px solid #ced4da;
+            border-radius: 15px;
+            padding: 0 10px;
+            margin-top: 10px;
+            resize: none;
+        }
+        textarea:focus{
+            outline: none;
+            border: 1px solid var(--mainColor);
+            box-shadow: 0px 0px 5px 0px var(--mainColor);
+        }
+    }
+    .total{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px 10px;
+        margin: 20px 0;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+        border-top: 1px solid rgba(204, 204, 204, 0.4);
+        div:first-child{
+            margin-bottom:10px ;
+            display: flex;
+            justify-content: space-between;
+        }
+        p{
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--secondColor);
+        }
+    }
+    button{
+        width: 100%;
+        padding: 10px;
+        a{
+            color: var(--mainColor);
+            font-size: 22px;
+            transition: 300ms;
+        }
+    }
+    button:hover{
+        a{
+            color: #fff;
+        }
+    }
+    .cartItems{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+.cart > div{
+    padding: 10px;
+}
+.showCart{
+    right: 0;
+}
+.cart-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.445);
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+    z-index: 555555;
+}
+.show-cart-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+.cart .cartItems .cartItem{
+    display: flex;
+    padding: 10px 0px 15px 0px !important;
+    margin:0 15px 20px 15px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+    .image{
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    .productInfo{
+        display: flex;
+        flex-direction: column;
+        .props{
+            color: gray;
+        }
+        .amountInput{
+            display: flex;
+            margin-top: 10px;
+            input{
+                border-top: 1px solid rgba(204, 204, 204, 0.473);
+                border-bottom: 1px solid rgba(204, 204, 204, 0.473);
+                width: 30px;
+                text-align: center;
+                padding: 3px;
+
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0; 
+            }
+    
+            input[type=number] {
+                -moz-appearance:textfield; /* Firefox */
+            }
+            p{
+                border: 1px solid rgba(204, 204, 204, 0.473);
+                width: 35px;
+                cursor: pointer;
+                text-align: center;
+                font-size: 18px;
+                margin: 0;
+                transition: 300ms;
+            }
+            p:hover{
+                background-color: rgb(230, 230, 230);
+            }
+            .reduce{
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+            }
+            .increase{
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,243 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="header">
+    {% load static %}
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide">
+                    <img src="{% static 'Images/slide1.png'%}" alt="" />
+                    <img class="mobile-img" src="{% static 'Images/slide1img.jpg' %}" alt="" />
+                    <div class="container">
+                        <div class="head">
+                            <h4>Stay Tuned </h4>
+                            <h2>Overdose On Music. Overdose On Quality </h2>
+                            <p>
+                                Headphones so good, you will not want to take it off.Leaving home without headphones would
+                                be a mistake.</p>
+                            <a class="shopUrl" href="shop.php">Shop now </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <img src="{% static 'Images/slide2.png'%}" alt="" />
+                    <img class="mobile-img" src="{% static 'Images/slide2img.png' %}" alt="" />
+                    <div class="container">
+                        <div class="head">
+                            <h4>Feel The Rhythm </h4>
+                            <h2>Spark Up Your Passion With Good Music. </h2>
+                            <p>
+                                Headphones so good, you will not want to take it off.Leaving home without headphones would
+                                be a mistake.</p>
+                            <a class="shopUrl" href="shop.php">Shop now </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide">
+                    <img src="{% static 'Images/slide.png'%}" alt="" />
+                    <img class="mobile-img" src="{% static 'Images/slide3img.webp' %}" alt="" />
+                    <div class="container">
+                        <div class="head">
+                            <h4>Stay Tuned</h4>
+                            <h2>Overdose On Music. Overdose On Quality</h2>
+                            <p>
+                                Headphones so good, you will not want to take it off.Leaving home without headphones would
+                                be a mistake.</p>
+                            <a class="shopUrl" href="shop.php">Shop now </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+<section class="section1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="{% static 'Images/img-1a_960x.png' %}" alt="about1" />
+        </div>
+        <div class="col-md-6 product-info">
+          <h4>Simply awesome</h4>
+          <h2>Amazing music gadgets for music lovers</h2>
+          <p>
+            Sed viverra ipsum nunc aliquet bibendum. Viverra ipsum nunc
+            aliquet bibendum enim facilisis gravida neque. Imperdiet massa
+            tincidunt nunc pulvinar sapien et ligula ullamcorper.
+          </p>
+          <a class="link">
+            Shop now
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 product-info">
+          <h4>Simply awesome</h4>
+          <h2>Amazing music gadgets for music lovers</h2>
+          <p>
+            Sed viverra ipsum nunc aliquet bibendum. Viverra ipsum nunc
+            aliquet bibendum enim facilisis gravida neque. Imperdiet massa
+            tincidunt nunc pulvinar sapien et ligula ullamcorper.
+          </p>
+          <a class="link">
+            Shop now
+          </a>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static 'Images/img-2_960x.png' %}" alt="about2" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="row">
+      <div class="col-lg">
+        <div class="image">
+          <img src="{% static 'Images/img3.jpg' %}" alt="featuresImage" />
+        </div>
+      </div>
+      <div class="col-lg features-list">
+        <h4>Advanced Features</h4>
+        <h1>Ultimate Comfort And Best Sound</h1>
+        <ul>
+          <li>
+            <img src="{% static 'Images/icon1.png' %}" alt="icon1" />
+            <span>Bluetooth connectivity</span>
+          </li>
+          <li>
+            <img src="{% static 'Images/icon2.png' %}" alt="icon2" />
+            <span>Wireless headphones</span>
+          </li>
+          <li>
+            <img src="{% static 'Images/icon3.png' %}" alt="icon3" />
+            <span>Long lasting battery</span>
+          </li>
+          <li>
+            <img src="{% static 'Images/icon4.png' %}" alt="icon4" />
+            <span>Higher water & dust resistance</span>
+          </li>
+          <li>
+            <img src="{% static 'Images/icon5.png' %}" alt="icon5" />
+            <span>One touch control</span>
+          </li>
+          <li>
+            <img src="{% static 'Images/icon6.png' %}" alt="icon6" />
+            <span>Active noise cancelling</span>
+          </li>
+        </ul>
+        <a class="link">Buy Now</a>
+      </div>
+    </div>
+  </section>
+  <section class="video-wrapper">
+    <div class="video-player close">
+      <i class="fa-solid fa-xmark fa-2x" onclick="toggleVideo()"></i>
+      <div class="overlay" onclick="toggleVideo()"></div>
+      <div class="video">
+        <video autoPlay="true"  controls>
+          <source src="{% static 'Images/Palm_Trees.mp4' %}" type="video/mp4"></source>
+        </video>
+      </div>
+    </div>
+    <div class="container">
+      <h3>The Right Headphones</h3>
+      <p>
+        In ornare quam viverra orci sagittis. Duis ultricies lacus sed turpis
+        tincidunt id aliquet risus. Arcu felis bibendum ut tristique et.
+      </p>
+      <div class="play" onclick="toggleVideo()">
+        <i class="fa-solid fa-play fa-lg"></i>
+      </div>
+    </div>
+  </section>
+  <section class="blogs">
+    <div class="container-fluid">
+      <div class="head">
+        <span></span>
+        <p>Good treble performance</p>
+        <h1>Rhythmic Music Blog</h1>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col blog-item">
+          <div class="image">
+            <img src="{% static 'Images/blog1.webp'%}" alt="blogImage" />
+          </div>
+          <div>
+            <h3>Take Fingertip Control</h3>
+          </div>
+          <div class="info">
+            <div>
+              <i class="fa-regular fa-circle-user"></i>
+              <p>By Ramamoorthi M</p>
+            </div>
+            <span></span>
+            <div>
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>October 16,2021</p>
+            </div>
+          </div>
+          <div class="desc">
+            Accumsan lacus vel facilisis volutpat. Posuere urna nec tincidunt
+            praesent. Tempus iaculis urna id volutpat. Sapien nec sagittis aliq.
+          </div>
+          <a class="link">Read more</a>
+        </div>
+        <div class="col blog-item">
+          <div class="image">
+            <img src="{% static 'Images/blog2.webp'%}" alt="blogImage" />
+          </div>
+          <div>
+            <h3>Take Fingertip Control</h3>
+          </div>
+          <div class="info">
+            <div>
+              <i class="fa-regular fa-circle-user"></i>
+              <p>By Ramamoorthi M</p>
+            </div>
+            <span></span>
+            <div>
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>October 16,2021</p>
+            </div>
+          </div>
+          <div class="desc">
+            Accumsan lacus vel facilisis volutpat. Posuere urna nec tincidunt
+            praesent. Tempus iaculis urna id volutpat. Sapien nec sagittis aliq.
+          </div>
+          <a class="link">Read more</a>
+        </div>
+        <div class="col blog-item">
+          <div class="image">
+            <img src="{% static 'Images/blog3.webp'%}" alt="blogImage" />
+          </div>
+          <div>
+            <h3>Take Fingertip Control</h3>
+          </div>
+          <div class="info">
+            <div>
+              <i class="fa-regular fa-circle-user"></i>
+              <p>By Ramamoorthi M</p>
+            </div>
+            <span></span>
+            <div>
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>October 16,2021</p>
+            </div>
+          </div>
+          <div class="desc">
+            Accumsan lacus vel facilisis volutpat. Posuere urna nec tincidunt
+            praesent. Tempus iaculis urna id volutpat. Sapien nec sagittis aliq.
+          </div>
+          <a class="link">Read more</a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+{% endblock%}

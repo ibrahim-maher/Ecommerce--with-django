@@ -1,0 +1,121 @@
+{% extends "template.html" %}
+{% block content %}
+{% load static %}
+<div class="product-header center">
+    <h1>PRODUCT</h1>
+    <p>All / {{product.name}}</p>
+  </div>
+  <div class="productDetails">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 filters">
+          <div className="featuredProducts">
+            <h3>Featured Products</h3>
+            
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9">
+          <div class="product-info">
+            <div class="productImages">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/media_imgs/{{product.image1}}"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/media_imgs/{{product.image2}}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-control">
+                <div class="name">
+                  <h1>{{product.name}}</h1>
+                </div>
+                <div class="price">
+                  <span>Price:</span>
+                  <p>${{product.price}}</p>
+                </div>
+                <div class="size">
+                  <span>Size:</span>
+                  <div class="options">
+                    <ul>
+                      <li class="active" data-value="2.5" >
+                        2.5 mm
+                      </li>
+                      <li data-value="13.5">
+                        13.5 mm
+                      </li>
+                      <li data-value="12.5">
+                        12.5 mm
+                      </li>
+                      <li data-value="3.5">
+                        3.5 mm
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="colors">
+                  <span>Color:</span>
+                  <div class="options">
+                    <ul>
+                        <li key={index} onClick={colorChangeHandler}>
+                            <img src="/media_imgs/{{product.image1}}" alt="productImage" />
+                        </li>
+                        <li key={index} onClick={colorChangeHandler}>
+                            <img src="/media_imgs/{{product.image2}}" alt="productImage" />
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="material">
+                  <span>Material:</span>
+                  <div class="options">
+                    <ul>
+                      <li
+                        class="active"
+                        data-value="Silicon"
+                      >
+                        Silicon
+                      </li>
+                      <li data-value="Plastic">
+                        Plastic
+                      </li>
+                      <li data-value="Fiber">
+                        Fiber
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="availability">
+                  <span>Availability:</span>
+                  <p class="instock">In stock !</p>
+                </div>
+                <div class="amountInput">
+                  <span>Amount</span>
+                  <p class="reduce"  onclick="decreaseProductAmount()">
+                    -
+                  </p>
+                  <input type="number" name="amount" value="1" />
+                  <p class="increase" onclick="increaseProductAmount()">
+                    +
+                  </p>
+                </div>
+                <div class="buttons">
+                  <button class="addToCart" onclick="addProductToCart()">
+                    Add To Cart
+                  </button>
+                  <button>Buy Now</button>
+                </div>
+              </div>
+          </div>
+          <div class="product-description">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var data = JSON.parse("{{data|escapejs}}");
+  </script>
+{% endblock %}

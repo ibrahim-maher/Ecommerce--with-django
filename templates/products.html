@@ -1,0 +1,266 @@
+{% extends "template.html" %}
+{% block content %}
+{% load static %}
+<div class="collections-header center">
+    <h1>COLLECTIONS</h1>
+    <p>Home / Collections</p>
+  </div>
+  <div class="collections">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 filters">
+            <div class="category">
+                <h3>Category</h3>
+                <ul class="mainLinksList">
+                  <li class="mainLink">
+                    <a class="link1">
+                      Wireless
+                    </a>
+                    <span>+</span>
+                    <ul class="subLinks">
+                      <li>
+                        <a class="link2">
+                          V50 Earphone
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mainLink">
+                    <a class="link1">
+                      Noise Isolated
+                    </a>
+                    <span>+</span>
+                    <ul class="subLinks">
+                      <li>
+                        <a class="link2">
+                          V50 Earphone
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mainLink">
+                    <a class="link1">
+                      Noise-Cancelling
+                    </a>
+                    <span>+</span>
+                    <ul class="subLinks">
+                      <li>
+                        <a class="link2">
+                          V50 Earphone
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mainLink">
+                    <a class="link1">
+                      Sports Earbud
+                    </a>
+                    <span onClick={openSubLinks}>+</span>
+                    <ul class="subLinks">
+                      <li>
+                        <a class="link2">
+                          V50 Earphone
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+            <div class="color">
+                <h3>Color</h3>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="color1" name="color1" value="black" />
+                    <label htmlFor="color1">
+                        <i class="fa-solid fa-check"></i>
+                      Black
+                      <span>(9)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="color2" name="color2" value="Blue" />
+                    <label htmlFor="color2">
+                      <i class="fa-solid fa-check"></i>
+                      Blue
+                      <span>(4)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="color3" name="color3" value="Green" />
+                    <label htmlFor="color3">
+                     <i class="fa-solid fa-check"></i>
+                      Green
+                      <span>(0)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="color4" name="color4" value="Orange" />
+                    <label htmlFor="color4">
+                     <i class="fa-solid fa-check"></i>
+                      Orange
+                      <span>(2)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="color5" name="color5" value="Red" />
+                    <label htmlFor="color5">
+                        <i class="fa-solid fa-check"></i>
+                      Red
+                      <span>(5)</span>
+                    </label>
+                  </li>
+                </ul>
+            </div>
+            <div class="color">
+                <h3>Size</h3>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="size1" name="size1" value="2.5" />
+                    <label htmlFor="size1">
+                        <i class="fa-solid fa-check"></i>
+                      2.5mm
+                      <span>(9)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="size2" name="size2" value="3.5" disabled />
+                    <label htmlFor="size2">
+                        <i class="fa-solid fa-check"></i>
+                      3.5mm
+                      <span>(4)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="size3" name="size3" value="12" />
+                    <label htmlFor="size3">
+                        <i class="fa-solid fa-check"></i>
+                      12mm
+                      <span>(0)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="size4" name="size4" value="13" disabled />
+                    <label htmlFor="size4">
+                    <i class="fa-solid fa-check"></i>
+                      13mm
+                      <span>(2)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="size5" name="size5" value="13.5" />
+                    <label htmlFor="size5">
+                        <i class="fa-solid fa-check"></i>
+                      13.5mm
+                      <span>(5)</span>
+                    </label>
+                  </li>
+                </ul>
+            </div>
+            <div class="color">
+                <h3>Brand</h3>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="brand1" name="brand1" value="arc" />
+                    <label htmlFor="brand1">
+                      <i class="fa-solid fa-check"></i>
+                      Arc
+                      <span>(9)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="brand2" name="brand2" value="autofy" />
+                    <label htmlFor="brand2">
+                        <i class="fa-solid fa-check"></i>
+                      Autofy
+                      <span>(4)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="brand3" name="brand3" value="beat" />
+                    <label htmlFor="brand3">
+                        <i class="fa-solid fa-check"></i>
+                      Beat
+                      <span>(0)</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="brand4" name="brand4" value="nemu" />
+                    <label htmlFor="brand4">
+                        <i class="fa-solid fa-check"></i>
+                      Nemu
+                      <span>(2)</span>
+                    </label>
+                  </li>
+                </ul>
+            </div>
+            <div class="clearAll">
+              <button>Clear All</button>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-9 products">
+            <div class="filterList">
+              <div class="dorpDawnOverlay"></div>
+              <div class="list">
+                <p>Sort by</p>
+                <div class="select">
+                  <span class="value">Featured</span>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <div class="option">
+                    <span data-value="rate" data-order="desc">
+                      Featured
+                    </span>
+                    <span data-value="price" data-order="asc">
+                      Price,low to high
+                    </span>
+                    <span
+                      data-value="price"
+                      data-order="desc"
+                    >
+                      Price,high to low
+                    </span>
+                    <span data-value="date" data-order="desc">
+                      date,new to old
+                    </span>
+                    <span data-value="date" data-order="asc">
+                      date,old to new
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% for product in products %}
+              <div class="product">
+                <div class="productHead">
+                  <a href="{% url 'productDetails' p_id=product.id %}" class="images">
+                    <img class="image1" src="/media_imgs/{{product.image1}}" alt="image1" />
+                    <img class="image2" src="/media_imgs/{{product.image2}}" alt="image2" />
+                  </a>
+                  <div class="options">
+                    <a
+                      class="overlayLink"
+                    ></a>
+                    <span class="center">
+                        <i class="fa-solid fa-link"></i>
+                    </span>
+                    <span class="center">
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+                    <span class="center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <a  href="{% url 'productDetails' p_id=product.id %}"  class="name">
+                    {{product.name}}
+                  </a>
+                  <p class="price">${{product.price}}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

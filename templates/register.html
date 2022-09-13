@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+{% block content %}
+{% load static %}
+<div class="login-header center">
+    <h1>CREATE ACCOUNT</h1>
+    <p>Home / Account</p>
+</div>
+<div class="login-form">
+    <p>Please Sign in your Account</p>
+    <div>
+      <form action="" method="post">
+          {% csrf_token %} 
+          {% for field in form %}
+          {{field}}
+          {% endfor %}
+        <button type="submit">Sign up</button>
+      </form>
+      {{form.errors}}
+    </div>
+    <div class="create">
+        <p>Have an account ?</p>
+        <a href="{% url 'login' %}">Log in now</a>
+    </div>
+  </div>
+{% endblock %}

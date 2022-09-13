@@ -1,0 +1,120 @@
+.contact-header{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../Images/login.jpg) fixed center center;
+    background-size: cover;
+    margin-top: 90px;
+    color: #fff;
+    margin-bottom: 70px;
+
+}
+.location{
+    height: 500px;
+    margin: 100px 0;
+    .container{
+        height: 100%;
+    }
+}
+.contact{
+    margin: 100px 0;
+    .row{
+        .contact-info{
+            .info{
+                display: flex;
+                align-items: center ;
+                height: 33%;
+                margin-bottom: 25px;
+                flex-direction: row;
+                padding:20px  10px;
+                border: 1px solid rgba(204, 204, 204, 0.5);
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                transition: 300ms;
+                -webkit-transition: 300ms;
+                -moz-transition: 300ms;
+                -ms-transition: 300ms;
+                -o-transition: 300ms;
+                div
+                {
+                    margin: 10px;
+                    a{
+                        color: var(--secondColor);
+                    }
+                }
+                .icon{
+                    background-color: var(--secondColor);
+                    padding: 10px 15px;
+                    width: fit-content;
+                    height: fit-content;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    transition: 300ms;
+                    -webkit-transition: 300ms;
+                    -moz-transition: 300ms;
+                    -ms-transition: 300ms;
+                    -o-transition: 300ms;
+                    color: var(--mainColor);
+                    
+                    
+                }
+                p{
+                    font-size: 18px;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .info:hover{
+            border: 1px solid var(--mainColor);
+            .icon{
+                background-color: var(--mainColor);
+                color: #fff;
+            }
+        }
+        .contact-form{
+           .form{
+                height: 100%;
+           }
+            .form-control{
+                background-color: #fff;
+                margin-bottom: 20px;
+                padding: 15px;
+                border-radius: 30px ;
+                -webkit-border-radius: 30px ;
+                -moz-border-radius: 30px ;
+                -ms-border-radius: 30px ;
+                -o-border-radius: 30px ;
+            }
+            .form-control:focus{
+                border: 1px solid var(--mainColor);
+                box-shadow: 0px 0px 5px 0px var(--mainColor);
+            }
+          h3{
+              color: var(--secondColor);
+              margin-bottom: 20px;
+          }
+          button{
+              width: 150px;
+          }
+        }
+    }
+}
+@media(max-width:500px){
+    .contact-header{
+        margin-top: 0;
+    }
+    
+}
+@media(max-width:768px){
+    .contact-form{
+        margin-top: 70px;
+    }
+    
+}

@@ -1,0 +1,153 @@
+.service-header{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../Images/login.jpg) fixed center center;
+    background-size: cover;
+    margin-top: 90px;
+    color: #fff;
+    margin-bottom: 70px;
+
+}
+.service1{
+    margin: 100px 0;
+    .col-md-6{
+        .img{
+            position: relative;
+            margin:20px auto;
+            width: 90%;
+            img{
+                max-width: 100%;
+            }
+            .desc{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.6);
+                align-items: flex-start;
+                padding:0 50px;
+                transition: 400ms;
+                -webkit-transition: 400ms;
+                -moz-transition: 400ms;
+                -ms-transition: 400ms;
+                -o-transition: 400ms;
+                opacity: 0;
+                h1{
+                    color: var(--mainColor);
+                    margin: 10px 0;
+                }
+                p{
+                    color: #fff;
+                    font-size: 20px;
+                    margin: 10px 0;
+
+                }
+                a{
+                    background-color: #fff;
+                    color: #000;
+                    font-size: 18px;
+                    margin: 10px 0;
+
+                }
+                a:hover{
+                    background-color: var(--mainColor);
+                }
+            }
+        }
+    }
+    .col-md-6:hover{
+        .desc{
+            opacity: 1;
+        }
+    }
+}
+.service2{
+    margin: 100px 0;
+    h1{
+        text-align: center;
+        color: #2e3c2d;
+        margin-bottom: 30px;
+    }
+    .col-lg{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 30px;
+        .image,.item{
+            position: relative;
+            .desc{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.6);
+                padding:0 50px;
+                transition: 400ms;
+                -webkit-transition: 400ms;
+                -moz-transition: 400ms;
+                -ms-transition: 400ms;
+                -o-transition: 400ms;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                opacity: 0;
+                h1{
+                    color: var(--mainColor);
+                    margin: 10px 0;
+                }
+                p{
+                    color: #fff;
+                    font-size: 20px;
+                    margin: 10px 0;
+
+                }
+                a{
+                    background-color: #fff;
+                    color: var(--mainColor);
+                    font-size: 18px;
+                    margin: 10px 0;
+
+                }
+                a:hover{
+                    background-color: var(--mainColor);
+                    color: #000;
+                }
+            }
+            img{
+                width: 90%;
+            }
+        }
+       
+    }
+    .col-lg:hover{
+        .image .desc{
+            opacity: 1;
+        }
+    }
+    .item:hover{
+        .desc{
+            opacity: 1;
+        }
+    }
+}
+@media(max-width:500px){
+    .service-header{
+        margin-top: 0;
+    }
+}
+@media(max-width:992px){
+    .service2 .col-lg .image{
+        width: 60%;
+        margin: auto;
+    }
+    .service2 .col-lg{
+        .item{
+            margin-bottom: 30px;
+        }
+    }
+}

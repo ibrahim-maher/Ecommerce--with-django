@@ -1,0 +1,131 @@
+{% extends "template.html" %}
+{% block content %}
+{% load static%}
+<div class="service-header center">
+    <h1>SERVICE</h1>
+    <p>Home / Service</p>
+  </div>
+  <div class="service1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img">
+            <img src="{% static 'Images/service-4.webp' %}" alt="service1" />
+            <div class="desc center">
+              <h1>Good Functions</h1>
+              <p>
+                Vitae congue mauris rhoncus aenean vel elit. Mauris pharetra
+                et ultrices neque non odio euismod lacinia atmt risus.
+              </p>
+              <a class="link">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img">
+            <img src="{% static 'Images/service-3.webp' %}" alt="service2" />
+            <div class="desc center">
+              <h1>New Bass Beat</h1>
+              <p>
+                Aliquet enim tortor at auctor urna nunc. Tempus imperdiet
+                nulla malesuada pellentesque elit eget gravida.
+              </p>
+              <a class="link">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img">
+            <img src="{% static 'Images/service-2.webp' %}" alt="service3" />
+            <div class="desc center">
+              <h1>Affordable Buds</h1>
+              <p>
+                Urna neque viverra justo nec ultrices dui sapien eget. Quam
+                nulla porttitor massa id neque aliquam vestibulum duis
+              </p>
+              <a class="link">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img">
+            <img src="{% static 'Images/service-1.webp' %}" alt="service4" />
+            <div class="desc center">
+              <h1>Sound Quality</h1>
+              <p>
+                Lectus nulla at volutpat diam. Accumsan sit amet nulla
+                facilisi morbi. Dictum varius duis sectetur lorem donec
+              </p>
+              <a class="link">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="video-wrapper">
+    <div class="video-player close">
+      <i class="fa-solid fa-xmark fa-2x" onclick="toggleVideo()"></i>
+      <div class="overlay" onclick="toggleVideo()"></div>
+      <div class="video">
+        <video autoPlay="true"  controls>
+          <source src="{% static 'Images/Palm_Trees.mp4' %}" type="video/mp4"></source>
+        </video>
+      </div>
+    </div>
+    <div class="container">
+      <h3>The Right Headphones</h3>
+      <p>
+        In ornare quam viverra orci sagittis. Duis ultricies lacus sed turpis
+        tincidunt id aliquet risus. Arcu felis bibendum ut tristique et.
+      </p>
+      <div class="play" onclick="toggleVideo()">
+        <i class="fa-solid fa-play fa-lg"></i>
+      </div>
+    </div>
+  </section>
+  <div class="service2">
+    <div class="container">
+      <h1>Grab Your Needs</h1>
+      <div class="row">
+        <div class="col-lg">
+          <div class="image">
+            <img src="{% static 'Images/service-5.webp' %}" alt="service5" />
+            <div class="desc center">
+              <h1>Safe Listening Processor</h1>
+              <p>
+                Diam maecenas sed enim ut sem viverra aliquet eget. Duis
+                ultricies lacus sed turpis tincidunt id aliquet.
+                Pellentesque diam volutpat commodo sed egestas gravid
+              </p>
+              <a class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="item">
+            <img src="{% static 'Images/service-6.webp' %}" alt="service6" />
+            <div class="desc center">
+              <h1>Go User Friendly</h1>
+              <a class="link">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'Images/service-7.webp' %}" alt="service7" />
+            <div class="desc center">
+              <h1>Simple Ear Reach</h1>
+              <a class="link">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'Images/service-8.webp' %}" alt="service8" />
+            <div class="desc center">
+              <h1>Good Music Parts</h1>
+              <a class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
